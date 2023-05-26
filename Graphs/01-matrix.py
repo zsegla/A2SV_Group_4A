@@ -4,9 +4,6 @@
 
 class Solution:
     def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
-        # rows, cols = len(mat), len(mat[0])
-        # direct = [(1,0),(-1,0),(0)()]
-       
         m, n = len(mat), len(mat[0])
         direct = [(-1, 0), (1, 0), (0, -1), (0, 1)] 
         queue = deque()
